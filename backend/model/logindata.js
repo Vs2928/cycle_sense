@@ -7,5 +7,6 @@ const loginSchema = new mongoose.Schema({
   password: String,
 });
 
-const LoginData = userDB.model('logindetails', loginSchema);
+const LoginData = userDB.model('cycledetails', loginSchema);
 module.exports = LoginData;
+

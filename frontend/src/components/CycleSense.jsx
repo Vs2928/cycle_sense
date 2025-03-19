@@ -14,7 +14,9 @@ function CycleSense() {
       setOpenFaq(index);
     }
   };
-
+  const gotologin = () => {
+    navigate('/login');
+  };
   // FAQ data
   const faqData = [
     {
@@ -61,10 +63,10 @@ function CycleSense() {
         <div className="hero-content">
           <h1 className="hero-title">Track, Understand & Nurture Your Menstrual Health</h1>
           <p className="hero-text">CycleSense is a smart assistant that helps you track your menstrual cycle, predict upcoming periods, identify fertility windows, and manage symptoms with personalized insights.</p>
-          <button className="btn-primary">Get Started - It's Free</button>
+        
         </div>
         <div className="hero-img">
-          <img src="/api/placeholder/400/400" alt="Woman using mobile app" />
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/015/577/611/small_2x/animated-character-scrolling-phone-woman-using-smartphone-half-body-flat-person-on-pink-background-with-alpha-channel-transparency-colorful-cartoon-style-hd-footage-for-animation-video.jpg" alt="Woman using mobile app" />
         </div>
       </section>
       
@@ -108,7 +110,7 @@ function CycleSense() {
       <section className="cta">
         <h2 className="cta-title">Take Control of Your Menstrual Health</h2>
         <p className="cta-text">Join thousands of users who have transformed their relationship with their menstrual cycle. Start tracking today and discover personalized insights about your body.</p>
-        <button className="btn-white">Download Now</button>
+        
       </section>
       
       {/* Footer */}
@@ -198,7 +200,7 @@ function CalendarDemo() {
       <div className="calendar-content">
         <h2 className="section-title">Intuitive Calendar View</h2>
         <p className="hero-text">Visualize your cycle with our easy-to-understand calendar. Track periods, ovulation, and fertility windows at a glance. Set reminders and log symptoms directly from the calendar view.</p>
-        <button className="btn-primary">Try Demo</button>
+        
       </div>
       <div className="calendar-img">
         <table className="calendar">
