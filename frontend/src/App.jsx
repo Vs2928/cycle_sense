@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
@@ -23,7 +22,13 @@ function App() {
         />
         <Route
           path="/dashboard"
-          element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
+          element={
+            isAuthenticated ? (
+              <Dashboard isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
         />
         <Route
           path="/quiz"
@@ -33,12 +38,11 @@ function App() {
           path="/remedies"
           element={isAuthenticated ? <Remedies /> : <Navigate to="/login" />}
         />
-         <Route
+        <Route
           path="/contents"
           element={isAuthenticated ? <EducationalContent /> : <Navigate to="/login" />}
         />
       </Routes>
-      
     </>
   );
 }

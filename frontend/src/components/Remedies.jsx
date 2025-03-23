@@ -28,7 +28,8 @@ const Remedies = () => {
       ],
       precautions: 'Avoid falling asleep with a heating pad on. Use medium heat settings to prevent burns.',
       videoId: 'XWqSVz0wXDw',
-      videoTitle: 'Heat Therapy for Menstrual Pain Relief'
+      videoTitle: 'Heat Therapy for Menstrual Pain Relief',
+      videoLink: 'https://youtu.be/lIHEaADyL_o?si=iC2qY8JRUkVWce_q' // Add YouTube link
     },
     {
       id: 2,
@@ -45,7 +46,8 @@ const Remedies = () => {
       ],
       precautions: 'Move slowly and gently. Never push through pain. Use props like pillows for support if needed.',
       videoId: 'ikJGnQIWHJg',
-      videoTitle: 'Gentle Stretching Routine for Period Pain Relief'
+      videoTitle: 'Gentle Stretching Routine for Period Pain Relief',
+      videoLink: 'https://youtu.be/lNySrpeJXBw?si=3d94UABo_JaMIBuh' // Add YouTube link
     },
     {
       id: 3,
@@ -61,7 +63,8 @@ const Remedies = () => {
       ],
       precautions: 'Check for herb allergies before use. Consult with a healthcare provider if you take medications, as some herbs can interact with them.',
       videoId: 'RRlOaQTJ0uA',
-      videoTitle: 'How to Make Anti-Inflammatory Tea for Period Pain'
+      videoTitle: 'How to Make Anti-Inflammatory Tea for Period Pain',
+      videoLink: 'https://youtu.be/jJx-f_VZK2c?si=a2rz8mqT4an59AZH' // Add YouTube link
     },
     {
       id: 4,
@@ -77,7 +80,8 @@ const Remedies = () => {
       ],
       precautions: 'Start with short sessions and gradually increase duration. Meditation is not a replacement for professional help if you experience severe mood disorders.',
       videoId: 'inpok4MKVLM',
-      videoTitle: 'Guided Meditation for PMS and Period Symptoms'
+      videoTitle: 'Guided Meditation for PMS and Period Symptoms',
+      videoLink: 'https://youtu.be/Fc3F6Q2ae28?si=3S9g2FafxNK06q2k' // Add YouTube link
     },
     {
       id: 5,
@@ -93,7 +97,8 @@ const Remedies = () => {
       ],
       precautions: 'Do not apply pressure to the point where it causes pain. Avoid certain acupressure points during pregnancy.',
       videoId: 'nKCe0fmQFCk',
-      videoTitle: 'Acupressure Points for Menstrual Pain Relief'
+      videoTitle: 'Acupressure Points for Menstrual Pain Relief',
+      videoLink: 'https://youtu.be/e2rMFXgYUW4?si=vu-a7cksfVcKDtPh' // Add YouTube link
     },
     {
       id: 6,
@@ -109,58 +114,8 @@ const Remedies = () => {
       ],
       precautions: 'Always dilute essential oils. Perform a patch test before use. Avoid during pregnancy or if you have hormone-sensitive conditions.',
       videoId: 'HqNEbx_3HZA',
-      videoTitle: 'Essential Oil Massage for Menstrual Pain'
-    },
-    {
-      id: 7,
-      category: 'nutrition',
-      title: 'Anti-Inflammatory Smoothie',
-      description: 'This nutrient-dense smoothie combines ingredients with anti-inflammatory properties that can help reduce menstrual pain and replenish nutrients lost during menstruation.',
-      steps: [
-        'Blend 1 cup of spinach or kale (rich in iron and magnesium)',
-        'Add 1/2 cup of pineapple (contains bromelain, a natural anti-inflammatory)',
-        'Add 1 tablespoon of ground flaxseed (contains omega-3 fatty acids)',
-        'Add 1 teaspoon of ginger (anti-inflammatory and antispasmodic)',
-        'Add 1 cup of plant-based milk and blend until smooth',
-        'Drink daily during your period'
-      ],
-      precautions: 'Adjust ingredients if you have allergies or dietary restrictions. This is a supplement to, not a replacement for, a balanced diet.',
-      videoId: 'zQx-ZbSQSBM',
-      videoTitle: 'Anti-Inflammatory Smoothie Recipe for Period Pain'
-    },
-    {
-      id: 9,
-      category: 'mood',
-      title: 'Journaling for Emotional Balance',
-      description: 'Journaling can be a powerful tool for managing the emotional aspects of PMS and menstruation. This practice helps process emotions, identify patterns, and develop coping strategies.',
-      steps: [
-        'Set aside 10-15 minutes daily, especially in the week before your period',
-        'Write freely about your emotions, symptoms, and experiences',
-        'Note patterns in your mood, energy levels, and physical symptoms',
-        'Identify triggers that worsen your symptoms',
-        'List self-care activities that help you feel better',
-        'Review your journal regularly to identify patterns across cycles'
-      ],
-      precautions: 'Journaling is not a replacement for professional help if you experience severe mood disorders. Seek support if negative thoughts become overwhelming.',
-      videoId: 'AKPLrZFrGiQ',
-      videoTitle: 'Journaling Techniques for PMS and Emotional Balance'
-    },
-    {
-      id: 10,
-      category: 'alternative',
-      title: 'Aromatherapy for PMS and Period Symptoms',
-      description: 'Certain essential oils can help alleviate physical and emotional symptoms associated with menstruation when used in aromatherapy. Different oils target different symptoms.',
-      steps: [
-        'For pain relief: Use lavender, clary sage, or marjoram oil',
-        'For mood support: Use bergamot, ylang-ylang, or rose oil',
-        'For fatigue: Use peppermint, rosemary, or citrus oils',
-        'Add 5-7 drops to a diffuser with water',
-        'Alternatively, add 2-3 drops to a tissue and inhale as needed',
-        'Use for 30 minutes at a time, 2-3 times daily during your period'
-      ],
-      precautions: 'Use only pure, high-quality essential oils. Some oils can trigger sensitivities or allergies. Ventilate the room properly when using a diffuser.',
-      videoId: 'jCgvblTqQFs',
-      videoTitle: 'Aromatherapy Techniques for PMS and Period Relief'
+      videoTitle: 'Essential Oil Massage for Menstrual Pain',
+      videoLink: 'https://youtu.be/xTf0Pl2hxsI?si=bYmBp3UxitsPQ2CH' // Add YouTube link
     }
   ];
 
@@ -232,7 +187,7 @@ const Remedies = () => {
                       <div className="video-info">
                         <span className="video-title">{remedy.videoTitle}</span>
                         <a 
-                          href={`https://youtu.be/SSC12rZdU6M?si=RW0NCT1MeY2yo6MF`} 
+                          href={remedy.videoLink} // Use the videoLink property
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="watch-button"
